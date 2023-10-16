@@ -1,0 +1,166 @@
+<!-- IMPORTANT REQUIREMENTS: 
+    - ALL IMAGES AND CONTAINERS MUST BE RESPONSIVE
+    - NO SIDE-SCROLLING
+    - IMG ASSETS SIZED CORRECTLY FOR MOBILE - RESIZE FIRST, DON'T RELY ON CSS. TAKES UP TOO MUCH SPACE!!!
+    - MOBILE VIEW APPEARS WHEN RESIZED TO 480PX OR BELOW -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wadden Website</title>
+    <link rel="stylesheet" href="stylesheet_Wadden_Mobile.css" type="text/css">
+    <script src="https://kit.fontawesome.com/54354a1188.js" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500;600;700&family=JetBrains+Mono:wght@200;400;600&family=Martian+Mono:wght@300&family=Staatliches&family=Tourney:wght@400;900&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <!-- In header, I want:
+        - Image on left side
+        - Title (probably my name?) -->
+        
+        <div id="header-top">
+            <img src="https://placehold.co/75x75" id="header-img" alt="placeholder image for now.">
+            <h1>Lauryn Wadden</h1>
+        </div>
+    </header>
+
+    <nav id="nav-bar">
+        <ul>
+            <li>
+                <a class="nav-link" href="#mission-vision">Mission and Vision</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="hero-section" class="main-section">
+        <!-- In my hero section, I want:
+        - Eye-catching image as background 
+        - Call to action 
+        - Maybe h1 here instead of in header, maybe short quote or summary of me?? -->
+        <h2 class="hero">Want to Connect?</h2>
+        <button type="button" id="cta-button" class="hero" onclick="window.location.href='#contact'">Contact me</button>
+        <div id="hero-space"><!-- For spacing--></div>
+    </section>
+
+    <main id="main">
+        <!-- In main, I want:
+        - Mission and vision container
+            - Two text boxes, one for mission, one for vision 
+            - One small image/icon for each text box 
+        - Skills container
+            - Probably one big text box with skills listed
+        - Resume container
+            - One big text box with resume on left side
+            - One big image on right side 
+            - (not half and half, resume is wider than image)
+        - Contact container
+            - Email form -->
+        
+        <section class="main-section" id="mission-vision">
+            <h2 class="section-title">Mission and Vision</h2>
+            <div id="mission-div"> 
+                <img src="https://placehold.co/100x100" id="mission-img" class="mv-img" alt="placeholder image for now.">
+                <p>This is my mission statement.</p>
+            </div>
+            <div id="vision-div"> 
+                <p>This is my vision statement.</p>
+                <img src="https://placehold.co/100x100" id="vision-img" class="mv-img" alt="placeholder image for now.">
+            </div>
+        </section>
+
+        <section class="main-section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <p id="skill-list">These are my skills.
+                Bacon ipsum dolor amet strip steak pancetta tri-tip, burgdoggen ball tip kielbasa turducken salami filet mignon buffalo doner meatball drumstick tenderloin. Meatball beef spare ribs, ham hock pastrami bacon alcatra. Kielbasa chicken pork loin jowl drumstick. 
+                <br>
+                <br>
+                Tenderloin venison spare ribs pastrami short ribs kielbasa shankle pork belly buffalo meatloaf chislic hamburger pork. Burgdoggen frankfurter meatloaf boudin, brisket jowl chuck ham hock buffalo andouille corned beef. Swine ball tip pastrami biltong cow turducken t-bone salami prosciutto pork loin pork chop.
+            </p>
+        </section>
+
+        <section class="main-section" id="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="container" id="resume-box">
+                <p>Bacon Ipsum Resume placeholder
+                    Bacon ipsum dolor amet excepteur duis brisket laboris. Tempor anim sint sirloin veniam velit in officia reprehenderit nostrud deserunt dolore burgdoggen pig culpa. Sunt eiusmod consequat, andouille rump pariatur cupim ground round et fatback brisket prosciutto. Ball tip porchetta sirloin bacon. Tri-tip mollit picanha, proident boudin irure tongue sed tail excepteur sausage capicola buffalo jowl ex. 
+                    <br>
+                    <br>
+                    Veniam consequat bacon elit salami exercitation biltong boudin cupidatat ut. Reprehenderit doner short ribs cupim, incididunt pork loin jerky est ipsum in cupidatat quis eu bresaola. Ullamco in nulla short loin, deserunt voluptate picanha incididunt elit. Ground round porchetta shankle nisi brisket ball tip biltong reprehenderit bresaola ipsum pork corned beef.
+                    <br>
+                    <br>
+                    Boudin elit quis corned beef chislic ham hock. Veniam pork loin in, commodo leberkas sirloin turducken tongue rump alcatra dolor incididunt eiusmod hamburger. Venison tail ham hock ad reprehenderit tri-tip. Deserunt tenderloin sint, in shankle minim hamburger beef ribs ex nulla jerky mollit leberkas alcatra shank.
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div class="img-container">
+                <img src="https://placehold.co/300x300" id="resume-img" alt="placeholder image for now.">
+            </div>
+        </section>
+
+        <section class="main-section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+
+            <!-- NEED TO FIX THE RIGHT SIDE OF INPUT- WHY DOES IT OVERFLOW??? -->
+            <form id="contact-form" action="mailto:laurynwadden@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm">
+                <label id="name-label" for="name">Name</label>
+                <input 
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your Name"
+                    required>
+                
+        
+                <label id="email-label" for="email">Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your Email"
+                    required>
+                
+
+                <label>Write your email here:</label>
+                <textarea
+                    name="email-textbox"
+                    id="email-textbox"
+                    class="input-textarea form-control"
+                    placeholder="Type your message here."
+                    required></textarea>
+                
+
+                <input
+                    type="submit"
+                    id="submit"
+                    class="submit-button">
+                  
+            </form>
+        </section>
+
+        
+        <button id="topButton" title="Go to top" onclick="window.location.href='#'">Top</button>
+
+
+    </main>
+</body>
+</html>

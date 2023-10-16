@@ -1,0 +1,243 @@
+html {
+    background-image: linear-gradient(#F88B96, #FFEFEF);
+    scroll-behavior: smooth;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+}  
+
+button, input, textarea {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200;
+}
+
+#cta-button {
+    width: 40%;
+    max-width: 100px;
+    height: auto;
+    align-self: center;
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #D23544;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    max-width: 100%;
+    height: auto;
+}
+
+#header-top {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #FAB0B6;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    height: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
+    color: black;
+}
+
+#header-img {
+    border-radius: 50%;
+    margin: 10px;
+}
+
+nav {
+    max-width: 100%;
+    height: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid #D23544;
+    background-color: #FFEFEF;
+}
+
+ul {
+    margin: 1em;
+    padding: 0;
+    gap: 1.5em;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#hero-section {
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    background-image: url("https://placehold.co/500x500");
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+}
+
+#hero-space {
+    height: 3em;
+}
+
+h2.hero {
+    padding: 1em 0;
+}
+
+.main-section {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    border-bottom: 2px solid darkgrey;
+    background-color: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+#mission-vision {
+    padding: 2vw;
+}
+
+#mission-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#vision-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img.mv-img {
+    border-radius: 50%;
+}
+
+#resume-img {
+    width: 100%;
+}
+
+p {
+    margin: 10px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-control {
+    text-align: left;
+    margin: auto;
+    padding: 0;
+    display: block;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin: auto;
+    padding: 10px 0 3px;
+}
+
+#email-textbox {
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    text-align: left;
+    resize: vertical;
+}
+
+.submit-button {
+    margin: 20px auto;
+    display: block;
+    width: 25%;
+    min-width: 100px;
+    height: 2em;
+    font-size: 16px;
+    border: black 1px solid;
+    border-radius: 10px;
+}
+
+#topButton {
+    position: fixed; 
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #FAB0B6;
+    color: #D23544;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+@media screen and (max-width: 480px) {
+
+    a {
+        font-size: 11px;
+    }
+
+    .main-section {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em;
+        box-sizing: border-box;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    p {
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
